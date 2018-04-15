@@ -2,7 +2,7 @@ import numpy as np
 
 def factLU(A):
     """
-        A é matriz escalonada
+        A é matriz aumentada
         b é a solução do sistema
         U é a matriz escalonada
         n é a ordem da matriz
