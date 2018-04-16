@@ -71,6 +71,7 @@ def solve_system(L, U, b, n):
 
     print("Matriz x", x)
 
+
 def solve(A):
     L, U, b, n = factLU(A)
 
