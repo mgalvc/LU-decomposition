@@ -1,7 +1,8 @@
 import numpy as np
 
 
-np.set_printoptions(precision=16)
+np.set_printoptions(precision=16, suppress=True, linewidth=500, floatmode='fixed')
+
 
 def factLU(A):
     """
@@ -33,8 +34,6 @@ def factLU(A):
 
         j += 1
         i += 1
-
-        print("Matriz U na iteração {}:\n {}".format(j, U))
 
     return [L, U, b, n]
 
@@ -78,7 +77,9 @@ def solve(A):
     L, U, b, n = factLU(A)
 
     print("Matriz L:\n", L)
+    print("\n")
     print("Matriz U:\n", U)
+    print("\n")
 
     solve_system(L, U, b, n)
 
