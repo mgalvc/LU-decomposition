@@ -1,6 +1,8 @@
 import numpy as np
 
 
+np.set_printoptions(precision=16)
+
 def factLU(A):
     """
         A é matriz aumentada
