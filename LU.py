@@ -15,7 +15,7 @@ def factLU(A):
     n = np.shape(U)[0]
     L = np.eye(n)
 
-    # fazer o escalonamento percorrendo as colunas
+    # fazer o escalonamento orientado a colunas
     j = 0
     # primeira linha não é alterada
     i = 1
