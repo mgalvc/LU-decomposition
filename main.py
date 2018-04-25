@@ -1,7 +1,6 @@
 import LU
 import numpy as np
 
-
 A = np.array([
     [1,-5,1,-13,3,16],
     [-5,1,16,-2,-7,7],

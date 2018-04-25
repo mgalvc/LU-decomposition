@@ -1,8 +1,6 @@
 import numpy as np
 
-
 np.set_printoptions(precision=16, suppress=True, linewidth=500, floatmode='fixed')
-
 
 def factLU(A):
     """
@@ -22,7 +20,7 @@ def factLU(A):
     # primeira linha não é alterada
     i = 1
     while j < n-1:
-        pivo = U[i - 1][j]
+        pivo = U[i-1][j]
 
         # loop para escalonar cada linha utilizando o pivo
         k = i
@@ -36,7 +34,6 @@ def factLU(A):
         i += 1
 
     return [L, U, b, n]
-
 
 def solve_system(L, U, b, n):
     # primeiro resolve Ly = b
@@ -71,7 +68,6 @@ def solve_system(L, U, b, n):
         i -= 1
 
     print("Matriz x", x)
-
 
 def solve(A):
     L, U, b, n = factLU(A)
