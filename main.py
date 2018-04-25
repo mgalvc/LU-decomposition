@@ -1,12 +1,10 @@
 import LU
 import numpy as np
 
-A = np.array([
-    [1,-5,1,-13,3,16],
-    [-5,1,16,-2,-7,7],
-    [-17,6,5,-1,4,-14],
-    [2,11,-1,-5,-20,3],
-    [3,-21,-8,-4,5,-5]
-], dtype=np.float64)
+M = [
+    [10,2,1,7],
+    [1,5,1,-8],
+    [2,3,10,6]
+]
 
-LU.solve(A)
+LU.solve(np.array(M, dtype=np.float64))
